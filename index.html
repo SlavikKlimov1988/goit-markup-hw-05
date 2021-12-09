@@ -19,21 +19,21 @@
                     <span class="nav__web">Web</span><span class="nav__studio">Studiio</span>
                 </a>
                 <ul class="navigator__list">
-                    <li class="navigator__item"><a class="navigator__item-link" href="index.html">Студия</a></li>
-                    <li class="navigator__item"><a class="navigator__item-link" href="./portfolio.html">Портфолио</a></li>
-                    <li class="navigator__item"><a class="navigator__item-link last"  href="">Контакты</a></li>
+                    <li class="navigator__item" tabindex="0"><a class="navigator__item-link" href="index.html">Студия</a></li>
+                    <li class="navigator__item" tabindex="0"><a class="navigator__item-link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="navigator__item" tabindex="0"><a class="navigator__item-link last"  href="">Контакты</a></li>
                 </ul>
             </nav> 
             <ul class="navigator__contakt-list">
-                <li class="navigator__contakt-item">
-                    <a href="mailto:info@devstudio.com" class="navigator__contakt-link">
+                <li class="navigator__contakt-item" tabindex="0">
+                    <a href="mailto:info@devstudio.com" class="navigator__contakt-link" tabindex="0">
                         <svg width="16px"; height="12px"; class="navigator__contakt-item-envelope">
                             <use href="images/symbol-defs.svg#icon-mail"></use>
                         </svg>info@devstudio.com
                     </a>
                 </li>
-                <li class="navigator__contakt-item">                  
-                    <a href="tel:+38 096 111 11 11" class="navigator__contakt-link">
+                <li class="navigator__contakt-item" tabindex="0">                  
+                    <a href="tel:+38 096 111 11 11" class="navigator__contakt-link" tabindex="0">
                         <svg width="10px"; height="16px"; class="navigator__contakt-item-envelope">
                             <use href="images/symbol-defs.svg#icon-phone"></use>
                         </svg>
@@ -47,7 +47,7 @@
             <section class="hero">
                 <div class="conteiner" >
                     <h1 class="section__titel-text">Эффективные решения <br> для вашего бизнеса</h1>
-                    <button class="sectio__titel-button" data-modal-open type="button">Заказать услугу</button>
+                    <button class="sectio__titel-button" type="button" data-modal-open >Заказать услугу</button>
                 </div>           
             </section>
             <section class="section">
@@ -106,13 +106,37 @@
                     <h2 class="section__aboutus-head">Чем мы занимаемся</h2>
                     <ul class="section__aboutus-list">
                         <li class="section__aboutus-item">
-                            <img src="images/komp.jpg" alt="компьютер" class="section__aboutus-img">
+                            <div class="aboutus-img-block">
+                                <img src="images/komp.jpg" alt="компьютер" class="section__aboutus-img">
+                                <div class="aboutus-text">
+                                    <p class="aboutus-text-transkript">
+                                        Десктопные приложения
+                                    </p>
+                                </div>
+                            </div>
+                            
                         </li>
                         <li class="section__aboutus-item">
-                            <img src="images/developer.jpg" alt="разработка" class="section__aboutus-img">
+                            <div class="aboutus-img-block">
+                                <img src="images/developer.jpg" alt="разработка" class="section__aboutus-img">
+                                <div class="aboutus-text">
+                                    <p class="aboutus-text-transkript">
+                                        Мобильные приложения
+                                    </p>
+                                </div>
+                            </div>
+                            
                         </li>
                         <li class="section__aboutus-item last">
-                            <img src="images/grafic.jpg" alt="графика" class="section__aboutus-img">
+                            <div class="aboutus-img-block">
+                                <img src="images/grafic.jpg" alt="графика" class="section__aboutus-img">
+                                <div class="aboutus-text">
+                                    <p class="aboutus-text-transkript">
+                                        Дизайнерские решения
+                                    </p>
+                                </div>
+                            </div>
+                            
                         </li>
                     </ul>
                 </div>            
