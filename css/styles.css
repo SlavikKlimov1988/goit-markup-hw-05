@@ -711,7 +711,10 @@ img {
   list-style: none;
   text-decoration: none;
 }
-
+.portfolio__list-href:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-product {
   position: relative;
   overflow: hidden;
@@ -740,6 +743,8 @@ img {
 }
 .portfolio__list-item:hover .portfolio-list-hover {
   transform: translateY(0);
+}
+.portfolio__list-item:focus {
 }
 /*-----------------------overley------------------*/
 .backdroup {
